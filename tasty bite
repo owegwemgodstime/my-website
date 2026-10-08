@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Tasty Bites</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <h2>Tasty Bites</h2>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <section class="hero" id="home">
+            <h1>Delicious Food, Made with Love</h1>
+            <p>Enjoy Delicious meals made fresh just for you.</p>
+            <button>View our Menu</button>
+            <img src="c:\Users\Charles_Win11_25H2\Downloads\fufu delicious.jpg.jpg">
+        </section>
+        <section class="menu" id="menu">
+            <h1>Our Menu</h1>
+            <nav id="menu">
+            <div class="menu-card">
+                <img src="c:\Users\Charles_Win11_25H2\Downloads\chicken burger.jpg">
+                <p>Juicy Chicken Burger with fresh vegetables</p>
+                <p>N3,500</p>
+                <button>Order Nows</button>
+            </div>
+            <div class="menu-card">
+                <img src="c:\Users\Charles_Win11_25H2\Downloads\micky doughnut.jpg">
+                <p>Freshly baked doughnut</p>
+                <p>N5,000</p>
+                <button>Order Nows</button>
+            </div>
+            <div class="menu-card">
+                <img src="c:\Users\Charles_Win11_25H2\Downloads\fish pie.jpg">
+                <p>Freshly baked Fish pie</p>
+                <p>N4,500</p>
+                <button>Order Nows</button>
+            </div>
+            <div class="menu-card">
+                <img src="c:\Users\Charles_Win11_25H2\Downloads\fried rice.jpg">
+                <p>Delicious Fried Rice served with cripsy chicken</p>
+                <p>N5,500</p>
+                <button>Order Nows</button>
+            </div>
+            <div class="menu-card">
+                <img src="c:\Users\Charles_Win11_25H2\Downloads\grilled cat fish & chips.jpg">
+                <p>Freshly grilled fish & Chips served with vegetables</p>
+                <p>N6,000</p>
+                <button>Order Nows</button>
+            </div>
+            </nav>
+        </section>
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <p>At Tasty Bites, we seve delicious meals made with fresh ingredients and lots of love.</p>
+            <img src="c:\Users\Charles_Win11_25H2\Downloads\delicious Spaghetti.jpg" alt="Tasty Bites Restaurant">
+        </section>
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message""></textarea>"
+                <button type="sumbit">Send Message</button>
+            </form>
+        </section>
+        <footer>
+        <p>&copy; 2026 Tasty Bites. All rightes reserved.</p>
+        </footer>
+<script src="script.js"></script>
+    </body>
+    
+</html>
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin:0;
+    line-height: 1.6;
+}
+h1, h2, h3 {
+    line-height:1.2;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h2 {
+    color: white;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.hero img {
+    width: 400px;
+    height: auto;
+}
+
+.menu {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+#menu {
+    background-color:#f5f5f5;
+}
+.menu-card {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px
+}
+
+.menu-card img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-card button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.about h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about img {
+    width: 500px;
+    max-width: 100;
+    border-radius: 10px;
+}
+
+.contact {
+    max-width: 60px 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, 
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    height: 150px;
+    resize:vertical;
+}
+
+.contact button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-card {
+        width: 80%;
+    }
+    
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+button {
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #a35405;
+    transform: translateY(-2px);
+}
+
+nav a {
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color:#ff9800
+}
+
+.hero img {
+    transition: 0.3s;
+}
+
+.hero img:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+}
+.hero img {
+    width: 100px;
+}
+}
+
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
